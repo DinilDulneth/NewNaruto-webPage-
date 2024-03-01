@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>NARUTO | TVSeries</title>
+
+        <style>
+            body
+            {
+                margin: 0px;
+            }
+            .top-section
+            {
+                height:598px;
+                background-image: url(Picture/Naruto17.jpg);
+                background-position: center;
+                background-size: cover; 
+            }
+
+            .top-section-1
+            {
+                display: flex;
+                flex-direction: row;
+            }
+            .logo
+            {
+                width: 110px;
+                position: fixed;
+                right:20px;
+                top: 50px;
+                z-index: 110;
+
+            }
+            .top-section-1-1
+            {
+                border: solid;
+                border-width: 1px;
+                border-radius: 2px;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(206, 0, 0);
+                border-color: rgb(206, 0, 0);
+                margin-top: 10px;
+                margin-left: 10px;
+                position: fixed;
+                z-index: 101;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                font-weight: bold;
+                box-shadow: 1px 1px 5px rgb(50, 49, 49);
+            }
+
+            .top-section-1-2
+            {
+                color:rgb(240, 240, 209);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size:18px; 
+                display:flex;
+                justify-content:end;
+                right: 20px;
+                top:20px;
+                position: fixed;
+                z-index: 101;
+            }
+            .top-section-2
+            {
+                margin-top: 68px;
+                color:  rgb(239, 239, 194);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 110px;
+                font-weight: bold;
+                margin-left: 30px;
+            }
+            .top-section-3
+            {
+                color: beige;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 55px;
+                font-weight: bold;
+                line-height: 60px;
+                margin-bottom: 5px;
+                margin-left: 27px;
+            }
+            .top-section-4
+            {
+                color: beige;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                margin-top: 30px;
+                margin-left: 27px;
+            }
+            .top-section-5
+            {
+                margin-top: 25px;
+                display:flex;
+                flex-direction: row;
+                margin-left: 27px;
+                
+            }
+            .top-section-5-1:hover
+            {
+                padding-left: 17px;
+                padding-right: 17px;
+                padding-top: 11px;
+                padding-bottom:12px;
+                border-color: rgb(23, 11, 74);
+                background-color:rgb(23, 11, 74);
+                
+            }
+            .top-section-5-2:hover
+            {
+                padding-left: 17px;
+                padding-right: 17px;
+                padding-top: 11px;
+                padding-bottom:12px;
+                border-color: rgb(23, 11, 74);
+                background-color:rgb(23, 11, 74);
+            }
+            .top-section-5-1
+            {
+                border: solid;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 9px;
+                padding-bottom:10px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 17px;
+                font-weight: bold;
+                color: white;
+                border-color: rgb(15, 6, 50);
+                background-color: rgb(15, 6, 50);
+                transition: 0.2s;
+            }
+            .top-section-5-2
+            {
+                border: solid;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 9px;
+                padding-bottom:10px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 17px;
+                font-weight: bold;
+                color: white;
+                border-color: rgb(15, 6, 50);
+                background-color: rgb(15, 6, 50);
+                margin-left: 20px;
+                transition: 0.2s;
+            }
+            .second-section
+            {
+                height: 328px;
+                background: url(Picture/Screenshot\ 2024-02-22\ 220041.png);
+                background-position: center;
+                background-size: cover; 
+                
+            }
+
+            .third-section
+            {
+                background-image: url(Picture/P67kGHedit.jpg);
+                background-position: center;
+                background-size: cover; 
+                height: 740px;
+                display: flex;
+                flex-direction: column;
+            }    
+            .third-section-1
+            {
+                font-size: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: 30px;
+                padding-top: 80px;
+                color: white;
+            }
+            .third-section-2
+            {
+                font-size: 25px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 430px;
+                margin-left: 40px;
+                background-color: rgb(37, 37, 37);
+                padding: 18px;
+                color: white;
+                border-radius: 2px;
+            }
+
+            .third-section-3
+            {
+                font-size: 15px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 100px;
+                margin-left: 40px;
+                background-color: rgb(53, 53, 53);
+                padding: 18px;
+                color: rgb(255, 255, 255);
+                border-radius: 50px;
+                position:absolute;
+                margin-left: 480px;
+                margin-top:590px;
+            }
+
+            .fourth-section
+            {
+                background-image: url(Picture/Naruto-Desktop-HD-Wallpaper-Free-download.jpg);
+                background-position: center;
+                background-size: cover; 
+                background-attachment:fixed;
+                left: 0px;
+                right: 0px;
+            }
+
+            .fourth-section-1
+            {
+                font-size: 60px;
+                padding-left: 200px;
+                display: flex;
+                flex-direction: row;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: rgb(35, 35, 35);
+            }
+
+            .fourth-section-2
+            {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 22px;
+            }
+            .fourth-section-3
+            {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 20px;
+            }
+            .fourth-section-2-1
+            {
+                width:300px;
+                margin-left: 20px;
+                background-color: rgba(255, 255, 255, 0.498);
+                border: solid;
+                border-width: 2px;
+                border-color: rgba(255, 255, 255, 0.712);
+                border-radius: 4px;
+
+            }
+            .fourth-section-2-4
+            {
+                width:300px;
+                margin-left: 20px;
+                margin-right: 20px;
+                border: solid;
+                border-width: 2px;
+                border-color: rgba(255, 255, 255, 0.712);
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, 0.498);
+            }
+
+            .fourth-section-3-1
+            {
+                width:275px;
+                margin-left: 20px;
+                border: solid;
+                border-width: 2px;
+                border-color: rgba(255, 255, 255, 0.712);
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, 0.498);
+            }
+            .fourth-section-3-4
+            {
+                width:279px;
+                margin-left: 20px;
+                margin-right: 20px;
+                border: solid;
+                border-width: 2px;
+                border-color: rgba(255, 255, 255, 0.712);
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, 0.498);
+            }
+            .fourth-section-2-1-1
+            {
+                background-color: rgb(255, 153, 0);
+                padding: 5px;
+                width:180px;
+                margin: 4px;
+                margin-left: 12px;
+                margin-top: 10px;
+                border-radius: 9px;
+                color: white;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 15px;
+            }
+            .fourth-section-2-1-2
+            {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 8px;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgb(0, 0, 0);
+            }
+
+            .custom-shape-divider-top-1708973507 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+            }
+
+            .custom-shape-divider-top-1708973507 svg {
+                position: relative;
+                display: block;
+                width: calc(162% + 1.3px);
+                height: 180px;
+            }
+
+            .custom-shape-divider-top-1708973507 .shape-fill {
+                fill: #FFFFFF;
+            }
+            .custom-shape-divider-bottom-1708973600 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                transform: rotate(180deg);
+            }
+
+            .custom-shape-divider-bottom-1708973600 svg {
+                position: relative;
+                display: block;
+                width: calc(162% + 1.3px);
+                height: 220px;
+            }
+
+            .custom-shape-divider-bottom-1708973600 .shape-fill {
+                fill: #FFFFFF;
+            }
+            .img-fifth
+            {
+                height: 465px;
+            }
+            .fifth-p1
+            {
+                position: absolute;
+                z-index: 100;
+                padding-top: 85px;
+                padding-left:90px ;
+                font-size: 35px;
+                color: azure;
+                font-weight: bold;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .fifth-p2
+            {
+                position: absolute;
+                z-index: 100;
+                padding-left: 300px;
+                padding-top: 290px;
+                color: azure;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .back-img
+            {
+                height: 700px;
+                background: url(Picture/naruto-manga-pictures-t44lxgnk8jlfh1ab.jpg);
+            }
+            .next-img-photo
+            {
+                width: 390px;
+                position: absolute;
+                padding-top: 120;
+                padding-left: 90px;
+                box-shadow: 1px 3px 5px black;
+            }
+            .sixth-p
+            {
+                position: absolute;
+                padding-left: 340px;
+                padding-top: 510px;
+                color: white;
+            }
+            .sixth-p-text
+            {
+                background-color: rgb(0, 128, 255);
+                padding-left:30px ;
+                padding-right: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-radius: 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                transition: 0.3s;
+            }
+            .sixth-p-text:hover
+            {
+                cursor: pointer;
+                padding-left:35px ;
+                padding-right: 35px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                
+            }
+            .custom-shape-divider-top-1709015746 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+            }
+
+            .custom-shape-divider-top-1709015746 svg {
+                position: relative;
+                display: block;
+                width: calc(162% + 1.3px);
+                height: 150px;
+                transform: rotateY(180deg);
+            }
+
+            .custom-shape-divider-top-1709015746 .shape-fill {
+                fill: #FFFFFF;
+            }
+            .custom-shape-divider-bottom-1709015859 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                transform: rotate(180deg);
+            }
+
+            .custom-shape-divider-bottom-1709015859 svg {
+                position: relative;
+                display: block;
+                width: calc(162% + 1.3px);
+                height: 150px;
+                transform: rotateY(180deg);
+            }
+
+            .custom-shape-divider-bottom-1709015859 .shape-fill {
+                fill: #FFFFFF;
+            }
+            .img-seventh
+            {
+                height: 740px;
+
+            }
+            .seventh-p1
+            {
+                position: absolute;
+                z-index: 100;
+                padding-top: 250px;
+                padding-left:80px ;
+                font-size: 35px;
+                color: azure;
+                font-weight: bold;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .seventh-p2
+            {
+                position: absolute;
+                z-index: 100;
+                padding-left: 300px;
+                padding-top: 400px;
+                color: azure;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .eight-section
+            {
+                height:600px;
+                background: url(Picture/uchiha-madara-under-the-rain-naruto-shippuden-thumb.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .eight-section-p
+            {
+                font-size: 40px;
+                color: rgb(228, 228, 228);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+                text-align: center;
+                text-shadow: 1px 2px 4px rgb(143, 15, 15);
+            }
+            .eight-section-p1
+            {
+                font-size: 14px;
+                color: rgb(144, 67, 67);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+                text-align: center;
+                text-shadow: 1px 2px 4px rgb(143, 15, 15);
+            }
+            .first-8-section
+            {
+                padding-top: 100px;
+                padding-left: 500px;
+            }
+            .ninth-section
+            {
+                background: url(Picture/942800.png);
+                background-position: center;
+                background-size: cover; 
+                left:0px;
+                right:0px;
+                height: 640px;
+            }
+        
+            .ninth-pic
+            {
+                width:1216px;
+                right: 0px;
+                left: 0px;
+            }
+            .ninth-pic-2
+            {
+                width:150px;
+                position: absolute;
+                padding: 50px;
+                padding-left: 200px;
+            }
+
+            .tenth-section-first 
+            {
+                padding-top: 30px;
+                right: 0px;
+                left: 0px;
+                top: 0px;
+                bottom: 0px;
+            }
+
+            .tenth-section-first p
+            {
+                box-shadow: 0px 1px 5px rgb(76, 76, 76);
+                color: rgba(0, 0, 0, 0.943);
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.221);
+                border-radius: 9px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 0px;
+                font-size: 35px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .tenth-p1
+            {
+                padding: 8px;
+                color: white;
+                font-size: 22px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .tenth-p2
+            {
+                font-size: 15px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .tenth-section-p
+            {
+                background-color: rgba(255, 255, 255, 0.338);
+                padding-left: 25px ;
+                padding-right: 25px ;
+                margin-left: 70px;
+                margin-right: 70px;
+                border-radius: 20px;
+                box-shadow: 1px 1px 3px rgb(49, 49, 49);
+                
+            }
+            .tenth-p-bottom
+            {
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                margin-left: 30px;
+                margin-right: 30px;
+                background-color: rgba(0, 0, 0, 0.283);
+                border-radius: 20px;
+                padding: 10px;
+                color: white;
+            }
+
+            .tenth-section-background
+            {
+                background: url(Picture/2044tkikt5312.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; 
+                left:0px;
+                right: 0px; 
+            }
+            .tenth-section-p-bottom-div
+            {
+                padding-bottom: 20px;
+            }
+            .tenth-color
+            {
+                background-color: orange;
+                width: 315px;
+                border-radius: 30px;
+            }
+            .end-section
+            {
+                margin-top: 0px;
+            }
+            .end-1
+            {
+                margin: 0px;
+                height: 400px;
+                background-color: rgb(225, 148, 60);
+            }
+            .end-2
+            {
+                
+                border-width: 1px;
+                border-bottom: solid;
+                margin: 0px;
+                height: 100px;
+                background-color: rgb(26, 26, 26);
+                color: white;
+            }
+            .end-3
+            {
+                margin: 0px;
+                height: 80px;
+                background-color:rgb(26, 26, 26);
+                color: white;
+            }
+            .end-p
+            {
+                margin: 0px;
+                padding-top: 90px;
+                padding-left: 50px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .end-p1
+            {
+                margin: 0px;
+                padding-left: 50px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .end-p2
+            {
+                margin: 0px;
+                padding-left: 50px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .end-p3
+            {
+                
+                padding-top: 10px;
+                margin: 0px;
+                padding-left: 50px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .end-p4
+            {
+                
+                margin: 0px;
+                padding-left: 1100px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+
+        <div class="top-section">
+            <div class="top-section-1">
+                <div class="top-section-1-1">DesignMosaic.S</div>
+                <a href="https://www.barnesandnoble.com/b/series/naruto-series/_/N-2k2o"><div class="top-section-1-2">Jump to : Anime | Books</div></a>
+                <img class="logo" src="Picture/AAAABTFG8WPgnr-f5OTCqg_DOpL_BaMIwNUvGWArfpZmA7nL8u2Bhj1BPo8JH1kh2gETAUiUse8AxNfdAPNk3rvOfHywD9OZJ9zWyW3uuPEHI1SN.png">
+            </div>
+            <div class="top-section-2">NARUTO</div>
+            <div class="top-section-3">The epic adventures of the world's greatest ninja!</div>
+            <div class="top-section-4">Created by Masashi Kishimoto | More about Naruto &#8711</div>
+            <div class="top-section-5">
+                <a href="https://www.youtube.com/watch?v=-G9BqkgZXRA"><div class="top-section-5-1">Book trailer</div></a>
+                <a href="https://www.youtube.com/watch?v=BxkVGm6Mn2o"><div class="top-section-5-2">Naruto Shippuden, Set 2 Blu-ray trailer</div></a>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="second-section">
+            <div class="image-second-section"></div>
+        </div>
+
+
+        <div class="third-section">
+
+            <div class="third-section-1">Introduction:</div>
+            <div class="third-section-2">"Naruto" is a globally renowned anime and manga series created by Masashi Kishimoto, first serialized in 1999 and later adapted into an anime television series in 2002. Set in a fictional world of ninjas and shinobi, the story follows Naruto Uzumaki, a spirited young ninja with dreams of becoming the strongest warrior in his village, the Hokage. Born with the Nine-Tailed Fox spirit sealed within him, Naruto faces rejection and isolation from his peers. However, undeterred by his troubled past, Naruto embarks on a journey filled with adventure, friendship, and self-discovery as he strives to prove his worth and protect those he cares about.</div>
+            <div class="third-section-3">"The Transformative Journey of Naruto: Themes of Growth, Friendship, and Redemption"</div>
+        </div>
+
+
+        <div class="fourth-section">
+            <div class="fourth-section-1">
+                Why should you watch&nbsp;<div>Naruto</div>&nbsp;?
+            </div>
+
+            <div class="fourth-section-2">
+                <div class="fourth-section-2-1">
+                    <div class="fourth-section-2-1-1">Compelling Storytelling:</div>
+                    <div class="fourth-section-2-1-2">"Naruto" offers a rich and immersive storyline filled with action, adventure, and emotional depth. The series follows the journey of Naruto Uzumaki, a young ninja with dreams of becoming the strongest ninja and leader of his village, as he faces various challenges and adversaries.</div>
+                </div>
+                <div class="fourth-section-2-1">
+                    <div class="fourth-section-2-1-1">Character Development: </div>
+                    <div class="fourth-section-2-1-2">The characters in "Naruto" are complex and well-developed, each with their own unique personalities, backstories, and motivations. Watching them grow and evolve over the course of the series is a rewarding experience, as they face trials and tribulations that shape their identities and beliefs.</div>
+                </div>
+                <div class="fourth-section-2-1">
+                    <div class="fourth-section-2-1-1">Themes of Friendship and Perseverance:</div>
+                    <div class="fourth-section-2-1-2">One of the central themes of "Naruto" is the importance of friendship, teamwork, and perseverance. The bonds formed between characters are powerful and heartfelt, serving as a source of strength and support in times of need.</div>
+                </div>
+                <div class="fourth-section-2-4">
+                    <div class="fourth-section-2-1-1">Action-Packed Battles:</div>
+                    <div class="fourth-section-2-1-2">"Naruto" features dynamic and exhilarating fight scenes, showcasing a variety of ninja techniques, combat styles, and strategies. Whether it's epic one-on-one duels or large-scale battles between ninja villages, the action in "Naruto" is sure to keep you on the edge of your seat.</div>
+                </div>
+            </div>
+
+            <div class="fourth-section-3">
+                <div class="fourth-section-3-1">
+                    <div class="fourth-section-2-1-1">Emotional Depth: </div>
+                    <div class="fourth-section-2-1-2">Beyond its action and adventure, "Naruto" explores complex themes such as loneliness, loss, redemption, and the search for identity. The series isn't afraid to delve into the emotional struggles and inner conflicts of its characters, resulting in poignant and heartfelt moments that resonate with viewers.</div>
+                </div>
+                <div class="fourth-section-3-1">
+                    <div class="fourth-section-2-1-1">World-Building:</div>
+                    <div class="fourth-section-2-1-2">The world of "Naruto" is richly detailed and expansive, with its own history, geography, and cultures. As Naruto and his friends journey through different lands and encounter various ninja villages, viewers are treated to a fascinating exploration of the series' lore and mythology.</div>
+                </div>
+                <div class="fourth-section-3-4">
+                    <div class="fourth-section-2-1-1">Influence and Legacy:</div>
+                    <div class="fourth-section-2-1-2">"Naruto" has had a significant impact on anime and popular culture, inspiring countless fans around the world. Whether it's through its iconic characters, memorable quotes, or distinctive visual style, the series has left a lasting legacy that continues to be felt to this day.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fifth-section">
+
+            <div style="position: relative; background-color: rgb(255, 154, 39); min-height: 50vh; right: 0px;left: 0px;">
+
+                <div>
+                    <div class="image-fifth-p">
+                        <p class="fifth-p1">"If you dont't like your destiny,<br> Don't accept it. <br>instead have the courage to <br>change it the way you want it to be."<p/>
+                        <p class="fifth-p2">- NARUTO UZUMAKI -</p>
+                    </div>
+
+                    <img class="img-fifth" src="Picture/edit1wp12435346.jpg">
+                    
+                
+                    <div class="custom-shape-divider-top-1708973507">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="custom-shape-divider-bottom-1708973600">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixth-section">
+            <div class="back-img">
+                <div class="next-img">
+                    <img class="next-img-photo" src="Picture/9781421564517.jpg">
+                </div>
+
+                <a href="https://dinildulneth.github.io/DesignMosaic.S-NarutoTVSeries-/Example2(characters).html">
+                <div class="sixth-p">
+                    
+                        <p class="sixth-p-text">Click here to <br>More info about <br>characters! ></p>
+                   
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="seventh-section">
+
+            <div style="position: relative; background-color: rgb(91, 93, 100); min-height: 50vh;">
+
+                <div>
+                    <div class="image-fifth-p">
+                        <p class="seventh-p1">"Those who break the rules are scum, <br>but those who abandon their friends <br>are worse than scum"</p>
+                        <p class="seventh-p2">- KAKASHI HATAKE -</p>
+                    </div>
+
+                    <img class="img-seventh" src="Picture/kakashi-hatake-5814250_1920.png">
+                    
+                
+                    <div class="custom-shape-divider-top-1709015746">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="custom-shape-divider-bottom-1709015859">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="eight-section">
+            <div class="first-8-section">
+                <p class="eight-section-p">WAKE UP TO REALITY!<BR>NOTHING EVER GOSE AS<br> PLANNED IN THIS WORLD.<BR>THE MORE<BR>YOU REALIZE THAT IN<BR>THIS REALITY ONLY PAIN,<BR>SUFFERING AND FUTILITY EXIST. </p>
+                <p class="eight-section-p1">- MADARA UCHIHA -</p>
+            </div>
+        </div>
+
+        <div class="ninth-section">
+            <img class="ninth-pic-2" src="Picture/AAAABTFG8WPgnr-f5OTCqg_DOpL_BaMIwNUvGWArfpZmA7nL8u2Bhj1BPo8JH1kh2gETAUiUse8AxNfdAPNk3rvOfHywD9OZJ9zWyW3uuPEHI1SN.png">
+        </div>
+
+        <div class="tenth-section">
+
+            <div class="tenth-section-background">
+
+                <div class="tenth-section-first">
+                    <p class="tenth-p-top">Life Lessons and Inspirations from Naruto</p>
+                </div>
+
+                <div class="tenth-section-p">
+                    <div class="tenth-color"><p class="tenth-p1">Perseverance and Determination:</p>
+                    </div>
+                     <p class="tenth-p2">Naruto's journey is a testament to the power of perseverance and determination. Despite facing numerous setbacks and challenges, he never gives up on his dreams and continues to work hard to achieve his goals. This teaches viewers the importance of staying resilient and never losing sight of their aspirations, even in the face of adversity.</p>
+                </div>
+
+                <div class="tenth-section-p">
+                    <div class="tenth-color"><p class="tenth-p1">Friendship and Bonds:</p>
+                    </div>
+                    <p class="tenth-p2">The importance of friendship and forming meaningful bonds with others is a central theme in Naruto. The series highlights the strength that comes from having friends who support and believe in you, even during the toughest times.</p>
+                </div>
+
+                <div class="tenth-section-p">
+                    <div class="tenth-color"><p class="tenth-p1">Redemption and Forgiveness:</p>
+                    </div>
+                    <p class="tenth-p2">Characters like Sasuke and Gaara undergo journeys of redemption, showing that it's never too late to change and seek forgiveness for past mistakes. The series explores themes of redemption, forgiveness, and the possibility of second chances.</p>
+                </div>
+
+                <div class="tenth-section-p">
+                    <div class="tenth-color"><p class="tenth-p1">Leadership and Responsibility:</p>
+                    </div>
+                    <p class="tenth-p2">As Naruto grows into a leader, he learns the importance of taking responsibility for his actions and making decisions that benefit others, even if it means making sacrifices. The series emphasizes the qualities of leadership and the impact that individuals can have on those around them.</p>
+                </div>
+
+                <div class="tenth-section-p">
+                    <div class="tenth-color"><p class="tenth-p1">Strength in Diversity:</p>
+                    </div>
+                    <p class="tenth-p2"> Naruto features a diverse cast of characters from different backgrounds, each with their own strengths, weaknesses, and experiences. The series celebrates diversity and teaches viewers to embrace differences and work together towards common goals.</p>
+                </div>
+
+                <div class="tenth-section-p">
+                    <div class="tenth-color"><p class="tenth-p1">The Power of Hope:</p>
+                    </div>
+                    <p class="tenth-p2">Throughout the series, Naruto embodies the concept of hope, inspiring others to believe in themselves and never lose hope, no matter how bleak the situation may seem. The series reminds viewers that even in the darkest times, there is always hope for a brighter future.</p>
+                </div>
+
+                <div class="tenth-section-p-bottom-div">
+                    <p class="tenth-p-bottom">Overall, the Naruto TV series offers viewers a compelling narrative filled with action, adventure, and meaningful life lessons. It teaches valuable values such as perseverance, friendship, acceptance, and hope, making it more than just a source of entertainment but also a source of inspiration and wisdom for viewers of all ages.<br>Finally I invite everyone to watch this masterpiece!  I guarantee it will never be a waste of time.</p>
+                </div>
+
+                <div>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="end-section">
+            
+            <div class="end-1">
+                <p class="end-p">Please be aware that you might find some unusual expressions that are difficult to understand.<br>
+                    Some information on this site may vary depending on your region.<br>
+                    The information on this site is not up to date as of the time of publication.</p>
+            </div>
+
+            <div class="end-2">
+                <P class="end-p1">contact with us</P>
+                <p class="end-p2">dinildulneth123@gmail.com</p>
+            </div>
+            
+            <div class="end-3">
+                <p class="end-p3">Product by Dinil Dulneth</p>
+                <p class="end-p4">english</p>
+            </div>
+        
+        </div>
+
+    </body>
+</html>
+
